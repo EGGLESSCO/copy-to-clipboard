@@ -101,5 +101,17 @@ Always summarize the information after each interaction and ask more questions t
         </textarea>
         <button onclick="copyText()">Click here to copy prompt</button>
     </div>
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("textToCopy");
+            copyText.removeAttribute('readonly'); // Temporarily remove readonly
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+            copyText.setAttribute('readonly', true); // Set readonly back
+            alert("Text copied to clipboard!");
+        }
+    </script>
 </body>
 </html>
+
