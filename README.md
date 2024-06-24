@@ -1,1 +1,5 @@
-# copy-to-clipboard
+copy-to-clipboard/
+│
+├── index.html
+├── README.md
+└── (any other files)
